@@ -28,3 +28,28 @@ http://localhost:8080/proveedores/
 Post Proveedores
 http://localhost:8080/proveedores/
 ![image](https://user-images.githubusercontent.com/65864090/170502198-32053e1e-3c02-41b4-9743-29fa55c5db93.png)
+
+Put proveedores
+http://localhost:8080/proveedores/000A
+![image](https://user-images.githubusercontent.com/65864090/170503218-8e3a39d2-e944-4620-996c-18045e379dc1.png)
+
+delete proveedores
+http://localhost:8080/proveedores/000A
+![image](https://user-images.githubusercontent.com/65864090/170503369-0eb5c921-413c-454e-98b5-7a98b026a616.png)
+
+get suministra
+http://localhost:8080/proveedores/
+![image](https://user-images.githubusercontent.com/65864090/170503652-993b35d6-0c35-48cc-9c37-47a728a7667c.png)
+
+post suministra
+http://localhost:8080/proveedores/
+![image](https://user-images.githubusercontent.com/65864090/170503915-a1940df5-70d7-4ca2-9014-f6ef32e02fa3.png)
+
+put suministra
+http://localhost:8080/proveedores/
+![image](https://user-images.githubusercontent.com/65864090/170504129-3d1337ae-d03d-49d8-bd65-1e71957ef15a.png)
+
+Delete suministra
+http://localhost:8080/proveedores/
+![image](https://user-images.githubusercontent.com/65864090/170504250-cf2ead09-2581-4675-8533-ee1b726ed383.png)
+
