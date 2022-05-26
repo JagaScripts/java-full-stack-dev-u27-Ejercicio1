@@ -21,6 +21,10 @@ Delete Piezas
 http://localhost:8080/piezas/1
 ![image](https://user-images.githubusercontent.com/65864090/170500357-6406cc0c-addf-4016-84ff-addde6810e04.png)
 
-Get Piezas
+Get Proveedores
 http://localhost:8080/proveedores/
 ![image](https://user-images.githubusercontent.com/65864090/170501807-77756c42-79db-4f14-99bd-a4f021163c93.png)
+
+Post Proveedores
+http://localhost:8080/proveedores/
+![image](https://user-images.githubusercontent.com/65864090/170502198-32053e1e-3c02-41b4-9743-29fa55c5db93.png)
