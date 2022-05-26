@@ -41,7 +41,7 @@ public class Proveedor {
 	private String nombre;
 	
 	@OneToMany
-    @JoinColumn(name="id")
+    @JoinColumn(name="id_proveedor")
     private List<Suministra> suministra;
 
 	/**

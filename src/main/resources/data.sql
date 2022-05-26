@@ -23,13 +23,20 @@ COLLATE = utf8mb4_0900_ai_ci;
 DROP TABLE IF EXISTS `piezas_y_proveedores`.`suministra`;
 CREATE TABLE `piezas_y_proveedores`.`suministra` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `codigo_pieza` INT NOT NULL,
-  `id_proveedor` CHAR(4) NOT NULL,
+  `codigo_pieza` INT,
+  `id_proveedor` CHAR(4),
   `precio` INT NULL,
   PRIMARY KEY (`id`))
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8mb4
 COLLATE = utf8mb4_0900_ai_ci;
+
+CREATE TABLE `piezas_y_proveedores`.`usuario` (
+  `id` INT AUTO_INCREMENT,
+  `username` VARCHAR(255) NOT NULL,
+  `password` VARCHAR(255) NOT NULL,
+  `role` VARCHAR(45) NULL,
+  PRIMARY KEY (`id`));
 
 ALTER TABLE `piezas_y_proveedores`.`suministra` 
 ADD INDEX `proveedores_fk_idx` (`id_proveedor` ASC) VISIBLE;
@@ -41,7 +48,14 @@ ADD CONSTRAINT `proveedores_fk`
   ON DELETE CASCADE
   ON UPDATE CASCADE;
   
-  INSERT INTO piezas (nombre) VALUES 
+ALTER TABLE `piezas_y_proveedores`.`suministra` 
+ADD CONSTRAINT `piezas_fk`
+  FOREIGN KEY (`codigo_pieza`)
+  REFERENCES `piezas_y_proveedores`.`piezas` (`codigo`)
+  ON DELETE CASCADE
+  ON UPDATE CASCADE;  
+  
+INSERT INTO piezas (nombre) VALUES 
 ('Batería'),
 ('Bombillas'),
 ('Discos de frenos'),
@@ -76,3 +90,6 @@ INSERT INTO suministra (codigo_pieza, id_proveedor, precio) VALUES
 (8, '000H', 55),
 (9, '000I', 100),
 (10,'001J', 35);
+
+
+INSERT INTO usuario (username, password, role) VALUES ('admin', '$2a$10$XURPShQNCsLjp1ESc2laoObo9QZDhxz73hJPaEv7/cBha4pk0AgP.','admin');
