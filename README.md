@@ -43,7 +43,7 @@ http://localhost:8080/proveedores/000A
 
 ![image](https://user-images.githubusercontent.com/65864090/170503369-0eb5c921-413c-454e-98b5-7a98b026a616.png)
 
-Det suministra
+Get suministra
 http://localhost:8080/proveedores/
 
 ![image](https://user-images.githubusercontent.com/65864090/170503652-993b35d6-0c35-48cc-9c37-47a728a7667c.png)
