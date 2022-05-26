@@ -17,6 +17,10 @@ Put Piezas
 http://localhost:8080/piezas/1
 ![image](https://user-images.githubusercontent.com/65864090/170500067-503a6ee4-ac56-490e-a841-1ff8d6e70269.png)
 
-Deletev Piezas
+Delete Piezas
 http://localhost:8080/piezas/1
 ![image](https://user-images.githubusercontent.com/65864090/170500357-6406cc0c-addf-4016-84ff-addde6810e04.png)
+
+Get Piezas
+http://localhost:8080/proveedores/
+![image](https://user-images.githubusercontent.com/65864090/170501807-77756c42-79db-4f14-99bd-a4f021163c93.png)
